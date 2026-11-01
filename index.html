@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>桌边旅伴 · 把世界里的它，带到桌面上</title>
   <meta name="description" content="YSM 桌面宠物 v1.0.0 正式发布。会散步、会回应右键、会抬眼看你的桌面旅伴。Windows 10 / 11 可用。" />
+  <meta name="author" content="Qxii2026" />
   <meta name="theme-color" content="#173b3f" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="桌边旅伴 · 把世界里的它，带到桌面上" />
   <meta property="og:description" content="YSM 桌面宠物 v1.0.0 正式发布。会散步、会回应右键、会抬眼看你的桌面旅伴。" />
-  <meta property="og:image" content="assets/pet-cutout.png" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23173b3f'/%3E%3Cpath d='M16 5l2.6 8.4L27 16l-8.4 2.6L16 27l-2.6-8.4L5 16l8.4-2.6z' fill='%23f3c969'/%3E%3C/svg%3E" />
+  <meta property="og:image" content="assets/icon-YSMD.png" />
+  <link rel="icon" type="image/x-icon" href="assets/icon-YSMD.ico" />
+  <link rel="icon" type="image/png" href="assets/icon-YSMD.png" />
+  <link rel="apple-touch-icon" href="assets/icon-YSMD.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet" />
@@ -84,7 +87,7 @@
     }
     .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand{display:flex;align-items:center;gap:11px;font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:.02em}
-    .brand .mark{width:24px;height:24px;color:var(--butter)}
+    .brand .mark{width:28px;height:26px;object-fit:contain;flex:none}
     .brand small{font-family:var(--sans);font-size:11px;font-weight:400;letter-spacing:.06em;opacity:.55;margin-left:2px}
     .nav-links{display:flex;align-items:center;gap:30px;font-size:14px;color:rgba(247,236,215,.72)}
     .nav-links a{transition:color .2s ease}
@@ -430,6 +433,9 @@
       display:flex;align-items:center;justify-content:space-between;gap:20px;
       color:rgba(247,236,215,.42);font-size:11.5px;
     }
+    .footer-brand{display:inline-flex;align-items:center;gap:8px}
+    .footer-brand img{width:18px;height:17px;object-fit:contain}
+    .footer-author{color:rgba(247,236,215,.55)}
     .footer-links{display:flex;gap:20px;align-items:center}
     .footer-links a:hover{color:var(--paper)}
     .to-top{display:inline-flex;align-items:center;gap:6px;color:rgba(247,236,215,.55)}
@@ -497,7 +503,7 @@
     <header class="nav">
       <div class="wrap nav-inner">
         <a class="brand" href="#top" aria-label="桌边旅伴，回到顶部">
-          <svg class="mark star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8l2.7 7.5 7.5 2.7-7.5 2.7L12 22.2l-2.7-7.5L1.8 12l7.5-2.7z"/></svg>
+          <img class="mark" src="assets/icon-YSMD.png" alt="" width="368" height="342" />
           <span>桌边旅伴</span><small>v1.0.0</small>
         </a>
         <nav class="nav-links" aria-label="页面导航">
@@ -794,7 +800,7 @@
               </a>
               <a class="btn ghost" href="https://github.com/qxii2027/YSM-Desktop" rel="noopener">GitHub 项目页</a>
             </div>
-            <p class="hero-note" style="margin-top:22px;color:rgba(247,236,215,.4)">Windows 10 / 11（64 位），解压即用。</p>
+            <p class="hero-note" style="margin-top:22px;color:rgba(247,236,215,.4)">Windows 10 / 11（64 位），解压即用。作者 Qxii2026。</p>
           </div>
           <div class="final-stage" aria-hidden="true">
             <div class="final-disc"></div>
@@ -803,8 +809,9 @@
         </div>
 
         <div class="wrap footer">
-          <span>桌边旅伴 · YSM 桌面宠物 v1.0.0</span>
+          <span class="footer-brand"><img src="assets/icon-YSMD.png" alt="" width="368" height="342" />桌边旅伴 · YSM 桌面宠物 v1.0.0</span>
           <div class="footer-links">
+            <span class="footer-author">作者 Qxii2026</span>
             <a href="https://github.com/qxii2027/YSM-Desktop" rel="noopener">GitHub</a>
             <a href="#top" class="to-top">回到顶部 ↑</a>
           </div>
