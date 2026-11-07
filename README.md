@@ -4,7 +4,7 @@
 
 本项目不修改 WindowX / YSM 本体；它是一个伴生 NeoForge mod + 一个托盘启动器。
 
-## 运行环境
+## 运行环境（旧版需要手动安装，新版不需要）
 
 - Windows 10 / 11 x64
 - Minecraft 1.21.1
